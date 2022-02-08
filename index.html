@@ -1,0 +1,718 @@
+<html lang="in">
+ <head> 
+  <title>BLACK CELL</title> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta charset="utf-8"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+  <style>
+        body {
+            background:#f1f1f1;
+            padding:0;
+            margin:0;
+            font-family:arial;
+        }
+        html, body {
+            height:100%;
+            }
+    </style> 
+  <meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+  <meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+  <meta http-equiv="origin-trial" content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9">
+  <meta http-equiv="origin-trial" content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9">
+  <meta http-equiv="origin-trial" content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9">
+  <link rel="preload" href="https://adservice.google.co.id/adsid/integrator.js?domain=mustahdi21.github.io" as="script"> 
+  <link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=mustahdi21.github.io" as="script"> 
+ </head> 
+ <body> 
+  <style>
+        #list {
+        background-color:white;
+        box-shadow:0 1px 3px 0 rgba(0,0,0,0.1);
+        border-radius:4px;
+        width:100%;
+        height:auto;
+        position:relative;
+        }
+.pos li {
+        display:block;
+        padding:3%;
+    }
+    .pos ul {
+        padding:0;
+        margin:0;
+    }
+.box {
+position: relative;
+}
+.box input:focus + label,
+.box input:valid + label,
+.box textarea:focus + label,
+.box textarea:valid + label {
+color: #005eff;
+top: -13px;
+}
+.box input:focus + label:after,
+.box input:valid + label:after,
+.box textarea:focus + label:after,
+.box textarea:valid + label:after {
+}
+.wrapper label {
+position: absolute;
+top: 19%;
+left: 2%;
+color: grey;
+text-decoration:none;
+background: white;
+width:24%;
+text-align:center;
+transition: 0.3s ease-in-out;
+border-radius: 50px;
+}
+.wrapper a {
+color: grey;
+border-radius: 50px;
+}
+#opi:hover {
+    color:#005eff;
+}
+.boxx {
+position: relative;
+}
+.boxx input:focus + label,
+.boxx input:valid + label,
+.boxx textarea:focus + label,
+.boxx textarea:valid + label {
+color: #005eff;
+top: -13px;
+left:36%;
+}
+.piol {
+    color:#005eff;
+}
+.rig {
+    color:grey;
+}
+.boxx input:focus + label:after,
+.boxx input:valid + label:after,
+.boxx textarea:focus + label:after,
+.boxx textarea:valid + label:after {
+}
+.wrapperx label {
+position: absolute;
+top: 19%;
+left: 1%;
+color: grey;
+text-decoration:none;
+background: white;
+width:22%;
+text-align:center;
+transition: 0.3s ease-in-out;
+border-radius: 50px;
+}
+.wrapperx a {
+color: grey;
+border-radius: 50px;
+}
+.btn-success:hover {
+    border:1px solid grey;
+    color:grey;
+}
+</style> 
+  <div style="background-color:#005eff;width:100%;height:108px;position:relative;"> 
+   <br> 
+   <br> 
+   <div class="container" style="background:white;height:122%;width:92%;border-radius:4px;box-shadow:0 1px 3px 0 rgba(0,0,0,0.1);position:relative;"> 
+    <br> 
+    <div class=""> 
+     <form name="operator"> 
+      <div class="wrapper"> 
+       <p class="box"> <input onkeyup="cek()" id="email" type="number" required name="nomo" class="form-control" value="" placeholder="08xxxx"> <label for="email"><small>Nomor Hp</small></label> <span class="fa fa-address-book form-control-feedback" style="color: #005eff;font-size:160%;"></span> </p> 
+      </div> 
+     </form>
+    </div> 
+    <div class=""> 
+     <div class="wrapperx" style="top:10px;position:relative;"> 
+      <p class="boxx"> <input id="kk" type="button" required name="name" placeholder="cari..." class="form-control" value="" style="color:transparent;"> <label for="name"><small id="kp">Provider</small></label> <span id="rolle" class="glyphicon glyphicon-chevron-right form-control-feedback col-xm-1" style=""></span> </p> 
+     </div> 
+    </div> 
+    <br> 
+   </div> 
+  </div> 
+  <h4 style="color:transparent;">error 709</h4> 
+  <h6 style="color:transparent;">error 809</h6> 
+  <img src="https://1.bp.blogspot.com/-xZxBQWLU_Lo/YOfDOiHb_kI/AAAAAAAABk0/1r5FJ_Yj5GEcP2oFQ9d72ittlO-2B7zvACLcBGAsYHQ/s604/IMG_20210709_103107_789.jpg" alt="Loading" style="width:100%;"> 
+  <br> 
+  <br> 
+  <div id="pusat" style="display: none;"> 
+   <div class=""> 
+    <div class="pos"> 
+     <ul> 
+      <!--THREE--> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>5 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-tri-5-000-703481"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Three</small>
+         <br> 
+         <small style="color:grey;">Rp 5.430</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>10 RB REGULER</h5> 
+         <a href="https://blackpayment.bukaolshop.site/produk/10-000-three-1024176"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Three</small>
+         <br> 
+         <small style="color:grey;">Rp 10.250</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>15 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-tri-15-000-703485"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Three</small>
+         <br> 
+         <small style="color:grey;">Rp 14.750</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>20 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-tri-20-000-703487"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Three</small>
+         <br> 
+         <small style="color:grey;">Rp 19.600</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>25 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-tri-25-000-703488"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Three</small>
+         <br> 
+         <small style="color:grey;">Rp 24.500</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>30 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-tri-30-000-703490"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Three</small>
+         <br> 
+         <small style="color:grey;">Rp 29.400</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>50 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-tri-50-000-703492"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Three</small>
+         <br> 
+         <small style="color:grey;">Rp 48.750</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <!--AXIS--> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>5 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-axis-5-000-703470"><button style="float:right;border-color: #005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Axis</small>
+         <br> 
+         <small style="color:grey;">Rp 5.990</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>10 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-axis-10-000-703471"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Axis</small>
+         <br> 
+         <small style="color:grey;">Rp 10.900</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>15 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-axis-15-000-703474"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Axis</small>
+         <br> 
+         <small style="color:grey;">Rp 15.020</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>25 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-axis-25-000-703476"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Axis</small>
+         <br> 
+         <small style="color:grey;">Rp 24.830 </small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>30 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-axis-30-000-703477"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Axis</small>
+         <br> 
+         <small style="color:grey;">Rp 29.895</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>50 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-axis-50-000-703478"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Axis</small>
+         <br> 
+         <small style="color:grey;">Rp 49.575</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <!--SMARTFREN--> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>5 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-smartfren-5-000-703545"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Smartfren</small>
+         <br> 
+         <small style="color:grey;">Rp 5.150</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>10 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-smartfren-10-000-704053"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Smartfren</small>
+         <br> 
+         <small style="color:grey;">Rp 10.060</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>15 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-smartfren-15-000-704055"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Smartfren</small>
+         <br> 
+         <small style="color:grey;">Rp 15.060</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>20 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-smartfren-20-000-704057"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Smartfren</small>
+         <br> 
+         <small style="color:grey;">Rp 19.860</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>25 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-smartfren-25-000-704058"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Smartfren</small>
+         <br> 
+         <small style="color:grey;">Rp 24.750</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>50 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-smartfren-50-000-704060"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Smartfren</small>
+         <br> 
+         <small style="color:grey;">Rp 49.850</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <!--XL--> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>5 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-xl-5-000-704043"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Xl</small>
+         <br> 
+         <small style="color:grey;">Rp 5.985</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>10 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-xl-10-000-704044"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Xl</small>
+         <br> 
+         <small style="color:grey;">Rp 10.995</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>15 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-xl-15-000-704045"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Xl</small>
+         <br> 
+         <small style="color:grey;">Rp 14.995</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>25 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-xl-25-000-704047"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Xl</small>
+         <br> 
+         <small style="color:grey;">Rp 24.940</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>30 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-xl-30-000-704048"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Xl</small>
+         <br> 
+         <small style="color:grey;">Rp 29.870</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>50 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-xl-50-000-704050"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Xl</small>
+         <br> 
+         <small style="color:grey;">Rp 49.470</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <!--INDOSAT--> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>5 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-indosat-5-000-703493"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Indosat</small>
+         <br> 
+         <small style="color:grey;">Rp 5.890</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>10 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-indosat-10-000-703495"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Indosat</small>
+         <br> 
+         <small style="color:grey;">Rp 10.890</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>15 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-indosat-15-000-703499"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Indosat</small>
+         <br> 
+         <small style="color:grey;">Rp 15.160</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>20 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-indosat-20-000-703504"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Indosat</small>
+         <br> 
+         <small style="color:grey;">Rp 20.050</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>25 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-indosat-25-000-703500"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Indosat</small>
+         <br> 
+         <small style="color:grey;">Rp 24.980</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>30 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-indosat-30-000-703506"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Indosat</small>
+         <br> 
+         <small style="color:grey;">Rp 29.860</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>50 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-indosat-50-000-703508"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Indosat</small>
+         <br> 
+         <small style="color:grey;">Rp 49.825</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <!--TELKOMSEL--> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>5 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-telkomsel-5-000-703449"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Telkomsel</small>
+         <br> 
+         <small style="color:grey;">Rp 5.485</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>10 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-telkomsel-10-000-703454"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Telkomsel</small>
+         <br> 
+         <small style="color:grey;">Rp 10.450</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>15 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-telkomsel-15-000-703455"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Telkomsel</small>
+         <br> 
+         <small style="color:grey;">Rp 15.090</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>20 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-telkomsel-20-000-703459"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Telkomsel</small>
+         <br> 
+         <small style="color:grey;">Rp 20.080</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>25 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-telkomsel-25-000-703462"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Telkomsel</small>
+         <br> 
+         <small style="color:grey;">Rp 25.180</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>30 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-telkomsel-30-000-703464"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Telkomsel</small>
+         <br> 
+         <small style="color:grey;">Rp 29.930</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+      <li> 
+       <div id="list"> 
+        <div class="container"> 
+         <h5>50 RB REGULER</h5> 
+         <a href="https://aufacell.bukaolshop.site/produk/pulsa-telkomsel-50-000-703468"><button style="float:right;border-color:#005eff;color:#005eff;background:none;" class="btn btn-success">Beli</button></a> 
+         <small style="color:grey;">Telkomsel</small>
+         <br> 
+         <small style="color:grey;">Rp 49.975</small> 
+         <br> 
+         <small style="color:transparent;">error89</small> 
+         <small style="color:transparent;">eror67</small> 
+        </div> 
+       </div> </li> 
+     </ul> 
+    </div> 
+   </div> 
+  </div> 
+  <br> 
+  <script>
+$(document).ready(function(){
+$("#kk").click(function(){
+    var va =
+$(this).val().toLowerCase();
+$(".pos li").filter(function(){
+$(this).toggle( $(this).text().toLowerCase().indexOf(va) > -1)
+});
+});
+$("#kk").on("click", function(){
+$("#pusat").show(100);
+});
+$("#email").on("keyup", function(){
+$("#rolle").addClass("piol");
+});
+$("#email").on("keyup", function(){
+$("#pusat").hide(100);
+});
+$("#pusat").hide();
+});
+function cek(){
+var x = document.forms["operator"]["nomo"].value;
+if (x == null || x == "" || x < 4)
+{document.getElementById("kk").value="";document.getElementById("kp").innerHTML="Provider";
+} else if(x == 0895 || x == 0896 || x == 0897 || x == 0898 || x == 0899)
+{document.getElementById("kp").innerHTML="Three";document.getElementById("kk").value="Three";
+} else if(x == 0838 || x == 0831 || x == 0832 || x == 0833)
+{document.getElementById("kp").innerHTML="Axis";document.getElementById("kk").value="Axis";
+} else if(x == 0814 || x == 0855 || x == 0816 || x == 0815 || x == 0856 || x == 0857 || x == 0858)
+{document.getElementById("kp").innerHTML="Indosat";document.getElementById("kk").value="Indosat";
+} else if(x == 0818 || x == 0817 || x == 0819 || x == 0859 || x == 0877 || x == 0878)
+{document.getElementById("kp").innerHTML="Xl";document.getElementById("kk").value="Xl";
+} else if(x == 0881 || x == 0882 || x == 0883 || x == 0884 || x == 0885 || x == 0886 || x == 0887 || x == 0888 || x == 0889)
+{document.getElementById("kp").innerHTML="Smartfren";document.getElementById("kk").value="Smartfren";
+} else if(x == 0811 || x == 0812 || x == 0813 || x == 0821 || x == 0822 || x == 0852 || x == 0853 || x == 0823 || x == 0851)
+{document.getElementById("kp").innerHTML="Telkomsel";document.getElementById("kk").value="Telkomsel";
+} else if(x == 0828  )
+{document.getElementById("kp").innerHTML="Ceria";document.getElementById("kk").value="Ceria";
+}
+}
+console.log("Powered By FLAM id");
+console.info("Telegram UserName = FLAMid");
+</script> 
+  <ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_0_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins id="aswift_0_anchor" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-8247290737950345&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1630416258&amp;plat=3%3A32%2C4%3A32%2C9%3A128%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C32%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fmustahdi21.github.io%2Fmustahdi.github.io%2F&amp;ea=0&amp;flash=0&amp;pra=5&amp;wgl=1&amp;dt=1644291970287&amp;bpp=18&amp;bdt=560&amp;idt=165&amp;shv=r20220201&amp;mjsv=m202202010101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=1733843691786&amp;frm=20&amp;pv=2&amp;ga_vid=880941551.1644291971&amp;ga_sid=1644291971&amp;ga_hid=2011254445&amp;ga_fc=0&amp;u_tz=420&amp;u_his=2&amp;u_h=889&amp;u_w=400&amp;u_ah=889&amp;u_aw=400&amp;u_cd=24&amp;u_sd=1.8&amp;dmc=4&amp;adx=-12245933&amp;ady=-12245933&amp;biw=400&amp;bih=774&amp;scr_x=0&amp;scr_y=0&amp;eid=42531398%2C31064709%2C31064730%2C31060475%2C31062931&amp;oid=2&amp;pvsid=302268822856292&amp;pem=984&amp;tmod=1059715484&amp;uas=0&amp;nvt=1&amp;eae=2&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C400%2C0%2C400%2C774%2C400%2C774&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;alvm=r20220203&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=281" data-google-container-id="a!1" data-load-complete="true"></iframe></ins></ins></ins>
+  <iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20220203/r20190131/zrt_lookup.html" style="display: none;"></iframe>
+ </body>
+</html>
